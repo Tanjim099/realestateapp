@@ -1,12 +1,12 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-function HomeLayout({ Children }) {
+function HomeLayout({ children }) {
     return (
         <div>
             <Navbar />
-            <main className=" min-h-[80vh]">
-                {Children}
+            <main className=" min-h-[90vh]">
+                {children}
             </main>
             <Footer />
         </div>
