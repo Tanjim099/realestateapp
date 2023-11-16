@@ -1,6 +1,7 @@
 import express from "express";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
+import userRoutes from "./routes/userRoute.js";
 
 //configure env
 dotenv.config();
@@ -9,7 +10,13 @@ dotenv.config();
 connectDB()
 
 
+
 const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
+
+app.use("/api/v1/user", userRoutes)
 
 app.get("/", (req, res) => {
     res.send({
