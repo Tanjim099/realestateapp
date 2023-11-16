@@ -30,7 +30,7 @@ function ProjectViewPage() {
                             </div>
 
                         </div>
-                        <div className="content01">
+                        <div className="content01 bg-gradient-to-r from-cyan-100 to-blue-10">
                             <h1>Sobha Neopolis</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, hic nulla provident in et, eos
                                 cupiditate ab dignissimos atque doloremque praesentium maxime quam obcaecati cum impedit iure
@@ -59,6 +59,42 @@ function ProjectViewPage() {
                                 magnam vitae ducimus voluptatibus sint deleniti cum rem sequi, id quibusdam.
                             </p>
                         </div>
+
+                        {/* ================= */}
+
+                        <div className="content04 mt-5 py-4 px-2 rounded">
+                            <h1>Complete View of Floor Plans &amp; Pricing</h1>
+                            <div className="content04_box">
+                                <div id="Flats" className="w-[35%] flex items-center justify-between my-3 mx-auto">
+                                    <h2 className=" ">3000+ Flats</h2>
+                                    <h2>80+ Villa</h2>
+                                </div>
+                                <div className="priceandplansbox flex justify-between w-[80%] m-auto">
+                                    <div id="pricesandbuttonbox" className=" flex flex-col items-center">
+                                        <h2>Select Floor Plan Type</h2>
+                                        <div className="planbtn mt-5 grid grid-cols-3 gap-3" style={{ width: "fit-content" }}>
+                                            <button className=" text-xl text-white bg-black border-0 rounded py-1 px-1 cursor-pointer" onclick="changer(this)">1 BHK</button>
+                                            <button className=" text-xl text-white bg-black border-0 rounded py-1 px-1 cursor-pointer" onclick="changer(this)">2 BHK</button>
+                                            <button className=" text-xl text-white bg-black border-0 rounded py-1 px-1 cursor-pointer" onclick="changer(this)">3 BHK</button>
+                                            <button className=" text-xl text-white bg-black border-0 rounded py-1 px-1 cursor-pointer" onclick="changer(this)">4 BHK</button>
+                                            <button className=" text-xl text-white bg-black border-0 rounded py-1 px-1 cursor-pointer" onclick="changer(this)">5 BHK</button>
+                                        </div>
+                                        <div className="sqftbox mt-5 flex items-center justify-between gap-2"><img className="w-[30px]" src="https://sobhaneopolis.co/wp-content/uploads/2023/03/ruler.webp" alt />
+                                            <p id="sqft" className=" text-center">643 - 643 Sqft</p>
+                                        </div>
+                                        <p id="price" className=" text-center mt-5">95 LPA</p>
+                                        <button id="pricesheet" onclick="popUp()">Price Sheet</button>
+                                    </div>
+                                    <div id="floorbox">
+                                        <img className="w-full shadow rounded" id="floorimage" src="https://www.sobhaneopolis.net.in/images/plans/2bhk-320w.webp" alt />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        {/* ==================== */}
 
                     </div>
                     <div className=" sm:w-[100%] md:w-[30%] flex flex-col gap-6">

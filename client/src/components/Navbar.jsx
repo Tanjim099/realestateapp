@@ -1,4 +1,5 @@
 import { TiThMenu } from "react-icons/ti"
+import { NavLink } from "react-router-dom"
 function Navbar() {
     return (
         <div className="navbar bg-[#7f1657]">
@@ -17,6 +18,7 @@ function Navbar() {
                                 {/* Sidebar content here */}
                                 <li><a>Sidebar Item 1</a></li>
                                 <li><a>Sidebar Item 2</a></li>
+                                <li><NavLink to="/project">Project</NavLink></li>
 
                             </ul>
                         </div>
